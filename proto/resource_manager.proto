@@ -82,6 +82,7 @@ message TokenBucketRequest {
     Consumption consumption_since_last_request = 4;
     // label background request.
     bool is_background = 5;
+    bool is_tiflash = 6;
 }
 
 message TokenBucketsResponse {
@@ -219,4 +220,14 @@ message RunawaySettings {
 
 message BackgroundSettings {
   repeated string job_types = 1; 
+}
+
+message Participant {
+    // name is the unique name of the resource manager participant.
+    string name = 1;
+    // id is the unique id of the resource manager participant.
+    uint64 id = 2;
+    // listen_urls is the serivce endpoint list in the url format.
+    // listen_urls[0] is primary service endpoint.
+    repeated string listen_urls = 3;
 }
