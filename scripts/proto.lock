@@ -11909,6 +11909,16 @@
                 "id": 8,
                 "name": "flashback_start_ts",
                 "type": "uint64"
+              },
+              {
+                "id": 9,
+                "name": "keyspace_id",
+                "type": "uint32"
+              },
+              {
+                "id": 10,
+                "name": "keyspace_name",
+                "type": "uint32"
               }
             ]
           },

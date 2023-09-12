@@ -127,6 +127,10 @@ message Region {
     bool is_in_flashback  = 7;
     // The start_ts that the current flashback progress is using.
     uint64 flashback_start_ts = 8;
+    /// The keyspace id this region is in, if any.
+    uint32 keyspace_id = 9;
+    /// The keyspace name (useful for debugging) 
+    uint32 keyspace_name = 10;
 }
 
 enum PeerRole {
