@@ -1,6 +1,6 @@
 [package]
 name = "kvproto"
-version = "0.0.2"
+version = "0.0.3"
 keywords = ["TiKV"]
 edition = "2018"
 build = "build.rs"
